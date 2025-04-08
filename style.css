@@ -10,7 +10,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 /* -----header---- */
 header{
@@ -28,6 +28,7 @@ header{
     color: rgba(255, 255, 255, 1);
     padding: 0 10px;
     font-weight: 500;
+    cursor: pointer;
 }
 .header__link:hover{
     text-decoration: underline;
@@ -61,7 +62,7 @@ header{
     margin: 0 auto; 
     padding: 20px 0;
 }
-.header__btn{
+.header__btn, .header__btns{
     font-weight: 700;
     font-size: 14px;
     line-height: 22px;
@@ -71,11 +72,11 @@ header{
     border: none;
     background-color: rgba(35, 166, 240, 1);
     color: rgba(255, 255, 255, 1);
+    cursor: pointer;
 }
-.one:hover{
+.header__btns:hover{
     background-color: rgba(255, 255, 255, 1);
     color: rgba(35, 166, 240, 1);
-    border: 1px solid rgba(35, 166, 240, 1);
     transition: all 1.12s;
 }
 .header__btn:hover{
@@ -85,6 +86,12 @@ header{
 .header__btn:active{
     transform: scale(1.12);
     transition: all 0.8s;
+}
+.hum__menu{
+    display: none;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
 }
 .modal {
     display: none;
@@ -145,3 +152,142 @@ header{
 .close:hover {
     color: black;
 }
+/* -------hero------ */
+.hero__text{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(35, 166, 240, 1);  
+    padding-top: 100px;  
+}
+.hero__title{
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 50px;
+    color: rgba(37, 43, 66, 1);
+    max-width: 585px;
+    padding: 10px 0;
+}
+.hero__subinfo{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: rgba(115, 115, 115, 1);
+    max-width: 470px;
+}
+.hero__box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 80px 0;
+}
+.hero__boxs{
+    max-width: 100%;
+    width: 328px;
+    max-height: auto;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 0 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.hero__img{
+    padding:25px 0;
+}
+.hero__subtitle{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: rgba(37, 43, 66, 1);
+}
+hr{
+    background-color: rgba(231, 64, 64, 1);
+    height: 2px;
+    width: 50px;
+    border: none;
+    margin: 20px 0;
+}
+.hero__info{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: rgba(115, 115, 115, 1); 
+    padding-bottom: 35px;   
+}
+
+/* -------main------- */
+.main__container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.main__img{
+    max-width: 100%;
+    height: auto;
+}
+.main__hr{
+    width: 94px;
+    height: 7px;
+    background-color: rgba(231, 64, 64, 1);   
+    margin: 35px 0;  
+}
+.main__title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.2px; 
+    color: rgba(37, 43, 66, 1);  
+}
+.main__text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;  
+    color: rgba(115, 115, 115, 1);  
+    max-width: 351px;
+    padding: 35px 0;
+}
+.main__link{
+    color: rgba(35, 166, 240, 1);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;    
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1085px){
+    .hero__box{
+        justify-content: space-around;
+    }
+    .hero__title, .hero__subinfo, .hero__text{
+        text-align: center;
+        margin: 0 auto;
+    }
+} 
+@media only screen and (max-width:921px) {
+    .main__container{
+        justify-content: center;
+    }
+}
+@media only screen and (max-width:630px) {
+    .header__btn, .header__link{
+        display: none;
+    }
+    .hum__menu{
+        display: block;
+    }
+    .header__list{
+        padding: 0 20px;
+    }
+    .header__title{
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .header__info{
+        font-size: 16px;
+    }
+}   
