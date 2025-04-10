@@ -10,7 +10,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 /* -----header---- */
 header{
@@ -290,7 +290,7 @@ hr{
     margin: 0 auto;
 }
 .join input{
-    padding: 12px 20px;
+    padding: 8px 20px;
     max-width: 100%;
     width: 460px;
     outline: none;
@@ -303,7 +303,7 @@ hr{
     border: 1px solid rgba(115, 115, 115, 1);
 }
 .join button{
-    padding: 12px 22.5px;
+    padding: 8px 22.5px;
     border-radius: 4px;
     font-weight: 600;
     font-size: 14px;
@@ -316,12 +316,43 @@ hr{
 .join button:hover{
     background-color: rgb(219, 235, 249);
     color: rgba(35, 166, 240, 1);
+    border: 1px solid blue;
 }
 .join input:focus{
     background-color: rgb(219, 235, 249);
     border: 1px solid rgba(35, 166, 240, 1);
 }
 
+/* ----------footer--------- */
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 100px 20px;
+    gap: 40px;
+}
+.footer__title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;   
+    color: rgba(37, 43, 66, 1); 
+    padding: 10px 0;
+}
+.footer__span{
+    padding: 25px 0;
+    cursor: pointer;
+}
+.footer__link, .footer__text{
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: rgba(115, 115, 115, 1); 
+    max-width:230px; 
+    padding: 5px 0;  
+}
 
 @media only screen and (max-width:1085px){
     .hero__box{
@@ -332,9 +363,15 @@ hr{
         margin: 0 auto;
     }
 } 
-@media only screen and (max-width:921px) {
+@media only screen and (max-width:940px) {
     .main__container{
         justify-content: center;
+    }
+}
+@media only screen and (max-width:816px) {
+    .footer__container{
+         justify-content: space-around;
+         row-gap: 30px;
     }
 }
 @media only screen and (max-width:630px) {
