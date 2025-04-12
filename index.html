@@ -10,20 +10,27 @@
     <title>Course Future</title>
 </head>
 <body>
+    <!-- --------nav-------- -->
+    <nav>
+       <div class="container nav__container">
+        <div class="nav__logo">
+            <h2 class="header__logo">BrandName</h2>
+        </div>
+        <div class="nav__center home">
+            <a href="#" class="header__link">Home</a>
+            <a href="#" class="header__link">Product</a>
+            <a href="#" class="header__link">Pricing</a>
+            <a href="#" class="header__link">Contact</a>
+        </div>
+        <div class="nav__right">
+            <button class="header__btn " nclick="openModal()">Login</button>
+            <div class="hum__menu" id="hum__menu">☰</div>
+        </div>
+       </div>
+    </nav>
     <!-- -------header--------- -->
     <header>
         <div class="container header__container">
-            <ul class="header__list">
-                <li class="header__item"><h2 class="header__logo">BrandName</h2></li>
-                <li class="header__item">
-                    <a href="#" class="header__link">Home</a>
-                    <a href="#" class="header__link">Product</a>
-                    <a href="#" class="header__link">Pricing</a>
-                    <a href="#" class="header__link">Contact</a>
-                </li>
-                <li class="header__item"><button class="header__btn" onclick="openModal()">Login</button></li>
-                <div class="hum__menu">≡</div>
-            </ul>
             <div class="header__box">
                 <p class="header__text">Online training</p>
                 <h2 class="header__title">25K+ STUDENTS TRUST US</h2>
@@ -47,6 +54,13 @@
                     <button type="submit" class="submit-btn">Register</button>
                   </form>
                 </div>
+            </div>
+            <div class="mobile__menu" id="mobile__menu">
+                <a href="#" class="header__link"><p class="mobile__text">Home</p></a>
+                <a href="#" class="header__link"><p class="mobile__text">Product</p></a>
+                <a href="#" class="header__link"><p class="mobile__text">Pricing</p></a>
+                <a href="#" class="header__link"><p class="mobile__text">Contact</p></a>
+                <button class="header__btn btn" onclick="openModal()">Login</button>
             </div>
         </div>
     </header>
@@ -108,7 +122,7 @@
                         <p class="section__text">English Departement</p>
                         <span class="section__span1">
                             <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <p class="section__comment" style="color: rgba(189, 189, 189, 1);">4.9</p>
+                            <p class="section__comment">4.9</p>
                         </span>
                     </div>
                     <p class="item__text">Graphic Design</p>

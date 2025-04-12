@@ -12,3 +12,10 @@ function openModal() {
       closeModal();
     }
   }
+  
+  let hum__menu = document.getElementById("hum__menu")
+  let mobile__menu = document.getElementById("mobile__menu")
+
+  hum__menu.addEventListener("click", ()=>{
+    mobile__menu.classList.toggle('show');
+  });
