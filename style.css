@@ -12,14 +12,7 @@
     padding: 20px;
     /* border: 1px solid red; */
 }
-/* -----header---- */
-header{
-    background-image: url(./images/header-backgraund.svg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-}
+/* --------nav--------- */
 nav{
     background-color: #222;
     position: fixed;
@@ -33,89 +26,9 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-.header__link{
-    color: rgba(255, 255, 255, 1);
-    padding: 0 10px;
-    font-weight: 500;
-    cursor: pointer;
-}
-.header__link:hover{
-    text-decoration: underline;
-    text-underline-offset: 4px;
-}
-.header__logo{
-    cursor: pointer;
-}
-.header__logo, .header__title, .header__info{
-    color: rgba(255, 255, 255, 1);
-}
-.mobile__text{
-    padding: 8px 0;
-    font-size: 20px;
-    cursor: pointer;
-}
-.mobile__text:hover{
-    transform: scaleY(1.2);
-    transition: all 1.1s;
-}
-.header__box{
-    padding: 100px 0;
-    text-align: center;
-}
-.header__text{
-    padding: 30px 0;
-    color: rgba(35, 166, 240, 1);
-}
-.header__title{
-    font-weight: 700;
-    font-size: 58px;
-    line-height: 70px;
-    letter-spacing: 0.2px; 
-    max-width: 535px; 
-    margin: 0 auto; 
-}
-.header__info{
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 0.2px;
-    max-width: 525px; 
-    margin: 0 auto; 
-    padding: 20px 0;
-}
-.btn{
-    max-width: 100%;
-    width: 120px;
-    margin: 5px;
-}
-.header__btn, .header__btns{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 22px;
-    letter-spacing: 0.2px;
-    padding: 10px 24px;
-    border-radius: 4px;
-    border: none;
-    background-color: rgba(35, 166, 240, 1);
-    color: rgba(255, 255, 255, 1);
-    cursor: pointer;
-}
-.header__btns:hover{
-    background-color: rgba(255, 255, 255, 1);
-    color: rgba(35, 166, 240, 1);
-    transition: all 1.12s;
-}
-.header__btn:hover{
-    background-color: rgba(255, 255, 255, 1);
-    color: rgba(35, 166, 240, 1);
-}
-.header__btn:active{
-    transform: scale(1.12);
-    transition: all 0.8s;
-}
 .hum__menu{
     display: none;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bold;
     color: rgba(255, 255, 255, 1);
     cursor: pointer;
@@ -188,11 +101,100 @@ nav{
     background-color: #222;
     padding: 20px;
     position: absolute;
-    top: 80px; 
+    top: 53px; 
     left: 0;
     width: 100%;
     z-index: 999;
     border-top: 1px solid white;
+}
+.mobile__text{
+    padding: 8px 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+.mobile__text:hover{
+    /* opacity: 90%; */
+    /* transition: all 1.1s; */
+}
+/* -----header---- */
+header{
+    background-image: url(./images/header-backgraund.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 150px;
+}
+.header__link{
+    color: rgba(255, 255, 255, 1);
+    padding: 0 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.header__link:hover{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+.header__logo{
+    cursor: pointer;
+}
+.header__logo, .header__title, .header__info{
+    color: rgba(255, 255, 255, 1);
+}
+.header__box{
+    padding: 100px 0;
+    text-align: center;
+}
+.header__text{
+    padding: 30px 0;
+    color: rgba(35, 166, 240, 1);
+}
+.header__title{
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 70px;
+    letter-spacing: 0.2px; 
+    max-width: 535px; 
+    margin: 0 auto; 
+}
+.header__info{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    max-width: 525px; 
+    margin: 0 auto; 
+    padding: 20px 0;
+}
+.btn{
+    max-width: 100%;
+    width: 120px;
+    margin: 5px;
+}
+.header__btn, .header__btns{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    padding: 10px 24px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgba(35, 166, 240, 1);
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+.header__btns:hover{
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(35, 166, 240, 1);
+    transition: all 1.12s;
+}
+.header__btn:hover{
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(35, 166, 240, 1);
+}
+.header__btn:active{
+    transform: scale(1.12);
+    transition: all 0.8s;
 }
 /* -------hero------ */
 .hero__text{
@@ -494,6 +496,12 @@ hr{
     }
 }
 @media only screen and (max-width:630px) {
+    .nav__container{
+        padding: 15px 20px;
+    }
+    .header__logo{
+        font-size: 20px;
+    }
     .header__btn, .home{
         display: none;
     }
